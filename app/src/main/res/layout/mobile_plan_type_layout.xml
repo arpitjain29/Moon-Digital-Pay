@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPlanTypes"
+        style="@style/TextView_regular"
+        android:text="Plan"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/color_fbbb03"
+        android:textColorLink="@color/color_fbbb03"
+        android:textSize="@dimen/_10ssp" />
+</LinearLayout>

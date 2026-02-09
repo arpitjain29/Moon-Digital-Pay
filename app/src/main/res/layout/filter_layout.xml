@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            style="@style/TextView_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Filter By"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+        <RadioGroup
+            android:id="@+id/rgBtnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbAllFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:fontFamily="@font/plusjakartasans_regular"
+                app:fontFamily="@font/plusjakartasans_regular"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/Color1A1C1E"/>
+            <RadioButton
+                android:id="@+id/rbSuccessFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Success"
+                android:fontFamily="@font/plusjakartasans_regular"
+                app:fontFamily="@font/plusjakartasans_regular"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/Color1A1C1E"/>
+            <RadioButton
+                android:id="@+id/rbPendingFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:fontFamily="@font/plusjakartasans_regular"
+                app:fontFamily="@font/plusjakartasans_regular"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/Color1A1C1E"/>
+            <RadioButton
+                android:id="@+id/rbFailedFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Failed"
+                android:fontFamily="@font/plusjakartasans_regular"
+                app:fontFamily="@font/plusjakartasans_regular"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/Color1A1C1E"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvCancelTextPopup"
+                style="@style/MaterialButton"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:backgroundTint="@color/black" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvOkTextPopup"
+                style="@style/MaterialButton"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="Ok"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

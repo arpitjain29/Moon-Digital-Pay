@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.DthRechargeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBackTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_medium"
+                    android:text="@string/tv_recharge"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutAppearance"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/dth_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Edittext"
+                android:hint="@string/enter_dth_number"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutAppearance"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/select_operator">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOperatorName"
+                    style="@style/Edittext"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/operator_name"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivOperatorImage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_placeholder_image"/>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChangeOperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:fontFamily="@font/plusjakartasans_bold"
+            android:text="@string/change"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutAppearance"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="@string/recharge_amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAmount"
+                style="@style/Edittext"
+                android:hint="@string/amount"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitMobileRecharge"
+            style="@style/MaterialButton"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/my_profile"
+        android:title="My Profile"/>
+    <item
+        android:id="@+id/change_password"
+        android:title="Charge Password"/>
+    <item
+        android:id="@+id/recharge_history"
+        android:title="Recharge History"/>
+    <item
+        android:id="@+id/wallet_history"
+        android:title="Wallet History"/>
+    <item
+        android:id="@+id/contact_us"
+        android:title="Contact Us"/>
+    <item
+        android:id="@+id/set_pin"
+        android:title="Set Pin"/>
+    <item
+        android:id="@+id/refer_earn"
+        android:title="Refer &amp; Earn"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share"/>
+</menu>

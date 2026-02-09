@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:id="@+id/llMainLayout"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRechargeAmountPlan"
+                style="@style/TextView_semi_bold"
+                android:layout_weight="1"
+                android:text="@string/_199"
+                android:textColor="@color/Color1A1C1E"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDataPlan"
+                    style="@style/TextView_semi_bold"
+                    android:text="2GB"
+                    android:textColor="@color/Color1A1C1E"
+                    android:textSize="@dimen/_10ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_regular"
+                    android:text="Data"
+                    android:textColor="@color/Color6C7278"
+                    android:textSize="@dimen/_8ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPlanDays"
+                    style="@style/TextView_semi_bold"
+                    android:text="28 Days"
+                    android:textColor="@color/Color1A1C1E"
+                    android:textSize="@dimen/_10ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_regular"
+                    android:text="Validity"
+                    android:textColor="@color/Color6C7278"
+                    android:textSize="@dimen/_8ssp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/Color6C7278" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPlanDetails"
+            style="@style/TextView_regular"
+            android:textColor="@color/Color6C7278"
+            android:textSize="@dimen/_8ssp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

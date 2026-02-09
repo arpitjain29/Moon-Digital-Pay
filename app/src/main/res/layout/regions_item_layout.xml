@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvRegionsItem"
+    style="@style/TextView_regular"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_f5f7fb"
+    android:text="@string/app_name"
+    android:padding="@dimen/_10sdp"
+    android:textColor="@color/black" />
