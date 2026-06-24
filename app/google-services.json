@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688561833232",
+    "project_id": "ai-pay-2face",
+    "storage_bucket": "ai-pay-2face.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688561833232:android:ace4dfdeab8dbf4dfe9195",
+        "android_client_info": {
+          "package_name": "com.moon_digital_pay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpLxAHYldl5d38DLlwbJgtEePsNdu4F3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
